@@ -2,7 +2,7 @@ FROM frolvlad/alpine-oraclejdk8
 #指定维护者信息
 MAINTAINER zzf
 VOLUME /tmp
-ADD target/bootDemo.jar bootDemo.jar
+ADD target/*.jar bootDemo.jar
 RUN sh -c 'touch /bootDemo.jar'
 ENV JAVA_OPTS=""
 EXPOSE 9090
