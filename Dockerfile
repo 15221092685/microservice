@@ -1,4 +1,5 @@
-FROM openjdk:8-jdk-alpine
+FROM frolvlad/alpine-oraclejdk8:slim
 VOLUME /tmp
-ADD target/webtest-0.0.1-SNAPSHOT.jar app.jar
-ENTRYPOINT ["java","-jar","/app.jar"]
+ADD target/webtest-0.0.1-SNAPSHOT.jar account-service.jar
+ENTRYPOINT ["java", "-jar", "/account-service.jar"]
+EXPOSE 9090
