@@ -1,4 +1,3 @@
-#!/bin/bash
 FROM frolvlad/alpine-oraclejdk8:slim
 VOLUME /tmp
 ADD target/webtest-0.0.1-SNAPSHOT.jar account-service.jar
